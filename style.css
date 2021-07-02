@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* general styling */
+
+h1, h2, h3{
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 1050px;
+    width: 100%;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+
+
+/* column rigth styling */
+
+.column-right{
+    width: 400px;
+    height: 100%;
+    color: #fff;
+    background-color: #f13180;
+}
+
+.column-right .image{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.column-right img{
+    height: 260px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+
+.info-container .text{
+    text-align: center;
+    padding: 25px;
+}
+
+.info-container .text h2{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+
+/* column left styling */
+
+.column-left{
+    width: 400px;
+    height: 100%;
+    padding: 40px;
+}
+
+
+.column-left .title h1{
+    font-size: 60px;  
+    color: #f13180;
+    margin-bottom: 20px;
+}
+
+.column-left .title h1,h3{
+    text-transform: uppercase;
+    }
+
+.column-left .info-container{
+    margin-top: 38px;
+}
+.column-left .info-container h2,h4{
+    color: #f13180;
+}
+
+.column-left .info-container .text2{
+    margin: 20px 0;
+}
+
+.column-left .info-container .text2 ul{
+    list-style: circle;
+}
+
+
+/* media query start */
+
+@media(max-width: 400px){
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+
+    
+
+    .column-right{
+        width: 50%;
+        
+    }
+
+    .column-right img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .info-container .text{
+        text-align: center;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .info-container .text h2{
+        
+        font-size: 20px;
+    }
+
+
+    .column-left{
+        width: 50%;
+        padding: 20px;
+    }
+
+    .column-left .title h1{
+        font-size: 40px;  
+        
+    }
+
+}
+
+@media(max-width: 800px){
+    .container{
+        height: 100%;
+    }
+}
